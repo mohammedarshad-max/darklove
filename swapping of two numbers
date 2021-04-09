@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+ double boy1,boy2,temp;
+ printf("Enter the score of boy1: ");
+ scanf("%lf",&boy1);
+ printf("Enter the score of boy 2: ");
+ scanf("%lf",&boy2);
+ 
+ temp=boy1;
+ 
+ boy1=boy2;
+ 
+ boy2=temp;
+ 
+ printf("\nThe score of boy1 after sawpping :%lf",boy1);
+ printf("\nThe score of boy2 after swapping :%lf",boy2);
+ 
+ return 0;
+}
+ 
