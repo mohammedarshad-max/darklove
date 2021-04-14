@@ -1,0 +1,29 @@
+#include<stdio.h>
+main()
+{
+	printf(" 1.pizza,rs 239\n 2.burger,rs 129\n 3.pasta,rs 179\n 4.frenchfries,rs 99\n 5.sandwich,rs 149\n");
+	int choice=0;
+	printf("\nenter your choice:");
+	scanf("%d",&choice);
+	
+	switch(choice)
+	{
+		case 1:
+			  printf(" food item- pizza\n price- rs239");
+			  break;
+		case 2:
+		    printf(" food item- burger\n price- rs129");	
+		    break;
+		case 3:
+		    printf(" food item- pasta\n price- rs179");
+		    break;
+		case 4:
+		    printf(" food item- french fries\n price- rs99");
+		    break;
+		case 5:
+		    printf(" food item - sandwich\n price- rs149");
+		    break;
+				    
+	}
+	return 0;
+}
