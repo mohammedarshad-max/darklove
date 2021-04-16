@@ -1,0 +1,17 @@
+#include<stdio.h>
+int suminteger(int n)
+   {
+   	if(n==0)
+   	  return 0;
+   	else
+   	  return(n%10+suminteger(n/10));
+   }
+   int main()
+   {
+   	int n,sum=0;
+   	printf("enter any integer:");
+   	scanf("%d",&n);
+   	sum=suminteger(n);
+   	printf("\n sum of digits:%d",sum);
+   	return 0;
+   }
