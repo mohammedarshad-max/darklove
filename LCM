@@ -1,0 +1,32 @@
+#include<stdio.h>
+int findlcm(int a,int b);
+
+int main()
+{
+	int num1,num2,result;
+	printf("\n input first number");
+	scanf("%d",&num1);
+	printf("\n input second number");
+	scanf("%d",&num2);
+	if(num1<num2)
+	  result=findlcm(num1,num2);
+	else
+	  result=findlcm(num2,num1);
+	
+	printf("LCM of %d and %d is: %d",num1,num2,result);
+	return 0;
+}
+ int findlcm(int a, int b)
+ {
+ 	static int common =0;
+ 	
+ 	common=+b;
+ 	if((common%a==0)&&(common%b==0))
+ 	{
+ 		return common;
+	}
+	else
+	{
+		return findlcm(a,b);
+	}
+ }
